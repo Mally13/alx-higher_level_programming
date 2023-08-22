@@ -2,10 +2,8 @@
 # 8-multiple_returns.py
 
 def multiple_returns(sentence):
+    if (sentence == ''):
+        return (0, None)
     slength = len(sentence)
-    if (slength == 0):
-        return None
     first = sentence[0]
-    stuple = (slength, first)
-    return stuple
-
+    return (slength, first)
