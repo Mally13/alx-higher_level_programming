@@ -2,13 +2,13 @@
 # 1-safe_print_integer.py
 
 def safe_print_integer(value):
-    """
-    safe_print_integer: a function that prints an integer with "{:d}".format()
+    """safe_print_integer: a function that prints
+    an integer with "{:d}".format()
     Args:
     @value: can be any type (integer, string, etc.)
-    
     Return:
-    True if value has been correctly printed (it means the value is an integer)
+    True if value has been correctly printed
+    (it means the value is an integer)
     Otherwise, returns False
     """
     try:

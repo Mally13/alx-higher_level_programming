@@ -3,11 +3,9 @@
 
 def safe_print_list(my_list=[], x=0):
     """prints x elements of a list
-
     Args:
     @my_list: list that can contain any type (integer, string, etc.)
     @x: represents the number of elements to print
-
     Returns:
     The number of elements printed
     """
@@ -20,4 +18,3 @@ def safe_print_list(my_list=[], x=0):
             break
     print("")
     return (no_printed)
-
