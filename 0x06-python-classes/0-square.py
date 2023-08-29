@@ -2,4 +2,7 @@
 # 0-square.py
 
 class Square:
+    """
+    This class defines a square.
+    """
     pass
