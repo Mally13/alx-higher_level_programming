@@ -1,19 +1,20 @@
 #!/usr/bin/python3
 """
-5-square.py
+6-square.py
 class Square that defines a square by: (based on 3-square.py)
 """
 
 
 class Square:
     """class Square that defines a square"""
-    def __init__(self, size=0):
+    def __init__(self, size=0, position=(0, 0)):
         """set size the a square"""
         if not isinstance(size, int):
             raise TypeError("size must be an integer")
         elif size < 0:
             raise ValueError("size must be >= 0")
         self.__size = size
+        self.position = position
 
     @property
     def size(self):
@@ -29,6 +30,21 @@ class Square:
             raise ValueError("size must be >= 0")
         self.__size = value
 
+    @property
+    def position(self):
+        """get current positon of a square"""
+        return (self.__position)
+
+    @position.setter
+    def position(self, value):
+        """set the position of a square"""
+        if (not isinstance(value, tuple) or
+                len(value) != 2 or
+                not all(isinstance(coord, int) for coord in value) or
+                not all(coord >= 0 for coord in value)):
+            raise TypeError("position must be a tuple of 2 positive integers")
+        self.__position = value
+
     def area(self):
         """Public instance method: def area(self)
         returns the current square area
@@ -41,7 +57,7 @@ class Square:
         if self.__size == 0:
             print("")
         else:
-            for i in range(0, self.__size):
-                for j in range(0, self.__size):
-                    print("#", end="")
+            for i in range(0, self.__position[1]):
                 print("")
+            for j in range(0, self.__size):
+                print(" " * self.__position[0] + "#" * self.__size)
