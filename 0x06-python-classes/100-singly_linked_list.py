@@ -22,8 +22,8 @@ class Node:
     """class Node that defines a singly linked list"""
     def __init__(self, data, next_node=None):
         """Instantiation with data and next_node"""
-        self.__data = data
-        self.__next_node = next_node
+        self.data = data
+        self.next_node = next_node
 
     @property
     def data(self):
