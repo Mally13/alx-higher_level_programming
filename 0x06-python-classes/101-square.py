@@ -70,5 +70,5 @@ class Square:
             for i in range(self.__position[1]):
                 representation += "\n"
             for j in range(self.__size):
-                representation += (" " * self.__position[0] + "#" * self.__size + "\n")
+                representation += " " * self.__position[0] + "#" * self.__size + "\n"
         return representation
