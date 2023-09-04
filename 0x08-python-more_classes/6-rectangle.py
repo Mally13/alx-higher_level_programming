@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-# 5-rectangle.py
+# 666666-rectangle.py
 
 
 """

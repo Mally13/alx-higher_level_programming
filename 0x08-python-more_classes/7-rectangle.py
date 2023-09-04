@@ -78,7 +78,8 @@ class Rectangle:
         else:
             for i in range(self.__height):
                 if i < (self.__height - 1):
-                    my_rectangle += (str(self.print_symbol) * self.__width + '\n')
+                    my_rectangle +=
+                    (str(self.print_symbol) * self.__width + '\n')
                 else:
                     my_rectangle += (str(self.print_symbol) * self.__width)
             return my_rectangle
