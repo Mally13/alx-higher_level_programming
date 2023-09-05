@@ -1,0 +1,50 @@
+# File: 0-add_integer.txt
+
+"""
+
+>>> add_integer = __import__('0-add_integer').add_integer
+
+# Test Case 1: Adding two integers
+>>> add_integer(1, 1)
+2
+
+# Test Case 2: Adding an integer and a float
+>>> add_integer(100, -2.5)
+98
+
+# Test Case 3: Adding two floats
+>>> add_integer(2.5, 3.7)
+5
+
+# Test Case 4: Adding with the default value of b
+>>> add_integer(5)
+103
+
+# Test Case 5: Adding non-integer values for a
+>>> add_integer("Hello", 42)
+Traceback (most recent call last):
+...
+TypeError: a must be an integer
+
+# Test Case 6: Adding None as a value for a
+>>> add_integer(None, 10)
+Traceback (most recent call last):
+...
+TypeError: a must be an integer
+
+# Test Case 7: Adding non-integer values for b
+>>> add_integer(42, "Hello")
+Traceback (most recent call last):
+...
+TypeError: b must be an integer
+
+# Test Case 8: Adding None as a value for b
+>>> add_integer(10, None)
+Traceback (most recent call last):
+...
+TypeError: b must be an integer
+
+"""
+
+# End of the docstring
+
