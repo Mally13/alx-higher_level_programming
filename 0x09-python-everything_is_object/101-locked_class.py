@@ -8,7 +8,10 @@ instance attribute is called first_name.
 
 class LockedClass:
     """class LockedClass with no class or object attribute"""
-    __dict__ = None
+    __slots__ = ('first_name',)
+
+    def __init__(self):
+        self.first_name = None
 
     def __setattr__(self, name, value):
         if name == 'first_name':
