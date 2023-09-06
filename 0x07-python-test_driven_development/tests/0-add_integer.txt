@@ -47,4 +47,3 @@ TypeError: b must be an integer
 """
 
 # End of the docstring
-
