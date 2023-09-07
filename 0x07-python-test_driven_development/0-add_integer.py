@@ -7,7 +7,7 @@ Returns:
 """
 
 
-def add_integer(a, b=98):
+def add_integer(a=None, b=98):
     """a function that adds 2 ints and
     returns sum of a and b asan integer.
     """
