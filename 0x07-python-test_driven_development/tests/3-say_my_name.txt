@@ -1,0 +1,25 @@
+# File: 3-say_my_name.txt
+"""
+
+>>> say_my_name = __import__('3-say_my_name').say_my_name
+
+# Test Case 1: Print my name
+>>> say_my_name("John", "Smith")
+My name is John Smith
+
+# Test Case 2: if nonstring first name
+>>> say_my_name(566, "Smith")
+Traceback (most recent call last):
+...
+TypeError: first_name must be a string
+
+# Test Case 3: if nonstring first name
+>>> say_my_name("John", 777)
+Traceback (most recent call last):
+...
+TypeError: last_name must be a string
+
+"""
+
+# End of the docstring
+
