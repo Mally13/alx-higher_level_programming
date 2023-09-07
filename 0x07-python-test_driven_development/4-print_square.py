@@ -9,9 +9,9 @@ Args:
 """
 
 
-def print_square(size=None):    
+def print_square(size=None):
     """prints a square"""
-    if size == None:
+    if size is None:
         raise ValueError("enter size")
     if isinstance(size, float) and size < 0:
         raise TypeError("size must be an integer")
