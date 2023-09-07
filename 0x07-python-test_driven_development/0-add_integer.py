@@ -15,4 +15,6 @@ def add_integer(a=None, b=98):
         raise TypeError("a must be an integer")
     elif not isinstance(b, (int, float)):
         raise TypeError("b must be an integer")
+    if a != a or b != b:
+        raise ValueError("cannot convert NaN to an integer")
     return (int(a) + int(b))

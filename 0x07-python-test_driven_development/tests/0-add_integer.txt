@@ -8,13 +8,13 @@
 >>> add_integer(1, 1)
 2
 
-# Test Case 2: Adding an integer and a float
->>> add_integer(100, -2.5)
-98
-
-# Test Case 3: Adding two floats
+# Test Case 2 Adding two floats
 >>> add_integer(2.5, 3.7)
 5
+
+# Test Case 3 Adding an integer and a negative float
+>>> add_integer(100, -2.5)
+98
 
 # Test Case 4: Adding with the default value of b
 >>> add_integer(5)
@@ -43,6 +43,18 @@ TypeError: b must be an integer
 Traceback (most recent call last):
 ...
 TypeError: b must be an integer
+
+# Test Case 9: No values passed
+>>> add_integer()
+Traceback (most recent call last):
+...
+TypeError: a must be an integer
+
+# Test Case 10: convert a float NaN (Not-a-Number) to an integer
+>>> add_integer(float('nan'), 2)
+Traceback (most recent call last):
+...
+ValueError: cannot convert NaN to an integer
 
 """
 
