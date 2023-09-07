@@ -19,6 +19,12 @@ Traceback (most recent call last):
 ...
 TypeError: last_name must be a string
 
+# Test Case 5: if missing both arguments
+>>> say_my_name()
+Traceback (most recent call last):
+...
+ValueError: enter first name
+
 """
 
 # End of the docstring
