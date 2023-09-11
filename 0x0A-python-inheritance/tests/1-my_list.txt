@@ -61,6 +61,15 @@ Test case 8: Too many arguments
 Traceback (most recent call last):
 TypeError: list expected at most 1 argument, got 2
 
+#Test case 9: Alphabetic elements
+>>> my_list = MyList()
+>>> my_list.append("Banana")
+>>> my_list.append("Apple")
+>>> my_list.append("Mango")
+>>> print(my_list)
+['Banana', 'Apple', 'Mango']
+>>> my_list.print_sorted()
+['Apple', 'Banana', 'Mango']
 
 """
 # End of the docstring
