@@ -46,6 +46,21 @@
 >>> my_list.print_sorted()
 [-4, 1, 2, 3, 5]
 
+#Test Case 6: Printing an empty list
+>>> empty_list = MyList()
+>>> empty_list.print_sorted()
+[]
+
+#Test Case 7: Creating an object and passing arguments
+>>> list_l = MyList([1, 2, 3])
+>>> print(list_l)
+[1, 2, 3]
+
+Test case 8: Too many arguments
+>>> my_list = MyList([1, 2], [3, 4])
+Traceback (most recent call last):
+TypeError: list expected at most 1 argument, got 2
+
 
 """
 # End of the docstring
