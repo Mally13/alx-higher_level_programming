@@ -1,0 +1,29 @@
+# File: 1-my_list.txt
+
+"""
+
+>>> MyList = __import__('1-my_list').MyList
+
+# Test Case 1: Object is of type MyList
+>>> my_list = MyList()
+>>> print(type(my_list))
+<class '1-my_list.MyList'>
+
+# Test Case 2: Elements can be appended
+>>> my_list = MyList()
+>>> my_list.append(1)
+>>> print(my_list)
+[1]
+
+# Test Case 3: Elements can be sorted
+>>> my_list = MyList()
+>>> my_list.append(1)
+>>> my_list.append(4)
+>>> my_list.append(2)
+>>> my_list.append(3)
+>>> my_list.append(5)
+>>> my_list.print_sorted()
+[1, 2, 3, 4, 5]
+
+"""
+# End of the docstring
