@@ -3,7 +3,8 @@
 """
 
 >>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
-# Test Casw 0: Check Class
+
+# Test Case 0: Check Class
 >>> bg = BaseGeometry()
 >>> type(bg)
 <class '7-base_geometry.BaseGeometry'>
