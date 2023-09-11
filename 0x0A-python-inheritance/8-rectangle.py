@@ -12,9 +12,9 @@ class Rectangle(BaseGeometry):
         """Instatiates a new Rectangle
         Args:
             width (int): The width of the rectangle
-            height (int): The height of the rectangle 
+            height (int): The height of the rectangle
       """
         self.integer_validator("width", width)
         self.__width = width
         self.integer_validator("height", height)
-        self.__height = height 
+        self.__height = height
