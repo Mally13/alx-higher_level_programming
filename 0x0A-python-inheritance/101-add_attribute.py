@@ -5,6 +5,8 @@
 Defines a function that adds a new attribute
 to an object if it’s possible
 """
+
+
 def add_attribute(obj, attr_name, attr_value):
     if hasattr(obj, '__dict__') or (
             hasattr(type(obj), '__slots__')
