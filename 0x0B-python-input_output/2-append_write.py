@@ -11,13 +11,5 @@ def append_write(filename="", text=""):
 
     if g=file doesn't exist it creates a new one
     """
-    try:
-        with open(filename, 'a', encoding="utf-8") as file:
-            chars = file.write(text)
-            return chars
-    except PermissionError:
-        print(
-                f"Permission denied: Cannot write to file '{filename}'"
-                )
-    except Exception as e:
-        print(f"An error occurred: {e}")
+    with open(filename, 'a', encoding="utf-8") as file:
+        return(file.write(text))
