@@ -13,5 +13,7 @@ def write_file(filename="", text=""):
         with open(filename, 'w', encoding="utf-8") as file:
             chars = file.write(text)
             return (chars)
+    except PermissonError:
+        print(f"Permission denied: Cannot write file '{filename}'")
     except Exception as e:
         print(f"An error occurred: {e}")

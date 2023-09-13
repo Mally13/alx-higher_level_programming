@@ -9,7 +9,7 @@ def read_file(filename=""):
     try:
         with open(filename, 'r', encoding='utf-8') as file:
             for line in file:
-                print(line, end='')  # Print each line without adding extra newlines
+                print(line, end='')
     except FileNotFoundError:
         print(f"File '{filename}' not found.")
     except Exception as e:
