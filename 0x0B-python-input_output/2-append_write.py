@@ -12,4 +12,4 @@ def append_write(filename="", text=""):
     if g=file doesn't exist it creates a new one
     """
     with open(filename, 'a', encoding="utf-8") as file:
-        return(file.write(text))
+        return (file.write(text))
