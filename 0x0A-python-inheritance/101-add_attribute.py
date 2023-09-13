@@ -8,6 +8,7 @@ to an object if it’s possible
 
 
 def add_attribute(obj, attr_name, attr_value):
+    """Adds a new attribute to an object"""
     if hasattr(obj, '__dict__') or (
             hasattr(type(obj), '__slots__')
             and attr_name in type(obj).__slots__):
