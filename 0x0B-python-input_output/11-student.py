@@ -13,12 +13,12 @@ class Student:
 
     def to_json(self):
         """Retrieves dictionary respresentation of a Student instance"""
+        if attrs is None:
+            return self.__dict__
         self_dict = {}
-        for attr_name in dir(self):
-            if not attr_name.startswith("__"):
-                attr_value = getattr(self, attr_name)
-                if isinstance(attr_value, (list, dict, str, int, bool)):
-                    self_dict[attr_name] = attr_value
+        for attr in attrs:
+            if hasattr(self, attr):
+                self_dict[attr] = getattr(self, attr)
         return (self_dict)
 
     def reload_from_json(self, json):
