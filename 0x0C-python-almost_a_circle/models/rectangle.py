@@ -37,12 +37,12 @@ class Rectangle(Base):
         if value <= 0:
             raise ValueError("width must be > 0")
         self.__width = value
-    
+
     @property
     def height(self):
         """get height"""
         return (self.__height)
-    
+
     @height.setter
     def height(self, value):
         """sets height"""
@@ -57,7 +57,7 @@ class Rectangle(Base):
         """get x"""
         return (self.__x)
 
-    @x.setter    
+    @x.setter
     def x(self, value):
         """sets x"""
         if not isinstance(value, int):
@@ -89,12 +89,14 @@ class Rectangle(Base):
         """Prints rectangle with instance character # based on x and y"""
         for i in range(self.y):
             print()
-        for i in range (self.height):
+        for i in range(self.height):
             print(" " * self.x + "#" * self.width)
 
     def __str__(self):
-        r_str = f"[Rectangle] ({self.id}) {self.x}/{self.y} - {self.width}/{self.height}"
-        return (r_str)
+        r = "[Rectangle] ({}) {}/{} - {}/{}".format(
+            self.id, self.x, self.y, self.width, self.height
+        )
+        return (r)
 
     def update(self, *args, **kwargs):
         """assigns an argument to each new attribute"""
@@ -114,4 +116,3 @@ class Rectangle(Base):
             for key, value in kwargs.items():
                 if hasattr(self, key):
                     setattr(self, key, value)
-
