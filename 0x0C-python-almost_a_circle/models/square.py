@@ -10,7 +10,7 @@ class Square(Rectangle):
     class Square that inherits from Rectangle
     """
     def __init__(self, size, x=0, y=0, id=None):
-        """initializes a Square"""    
+        """initializes a Square"""
         super().__init__(size, size, x, y, id)
 
     @property
@@ -46,5 +46,3 @@ class Square(Rectangle):
             for key, value in kwargs.items():
                 if hasattr(self, key):
                     setattr(self, key, value)
-
-
