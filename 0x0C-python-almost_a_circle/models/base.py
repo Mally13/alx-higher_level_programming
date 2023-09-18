@@ -26,7 +26,6 @@ class Base:
         Returns the JSON string representation of list_dictionaries.
         Args:
             list_dictionaries (list): A list of dictionaries.
-        
         """
         if list_dictionaries is None or len(list_dictionaries) == 0:
             return "[]"
