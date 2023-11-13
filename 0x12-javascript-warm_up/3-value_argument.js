@@ -1,6 +1,13 @@
 #!/usr/bin/node
-const { argv } = require('node:process');
-argv.forEach((val, index) => {
-  if (index !== 1 && index !== 0) { console.log(val); }
-  if (index === 1 && argv[2] === null) { console.log('No argument'); }
-});
+
+const {argv} = process;
+
+if (argv.length === 2)
+	console.log('No argument');
+else
+{
+	argv.forEach((val, index) => {
+		if (index !== 0 && index !== 1)
+			console.log(val);
+	});
+}
