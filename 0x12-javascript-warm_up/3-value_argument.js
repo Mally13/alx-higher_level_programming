@@ -3,5 +3,5 @@
 const { argv } = process;
 
 argv.forEach((val, index) => {
-  if (index === 1 && !argv[2]) { console.log('No argument'); } else if (index !== 0 && index !== 1) { console.log(val); }
+  if (index === 1 && typeof argv[2] === 'undefined') { console.log('No argument'); } else if (index !== 0 && index !== 1) { console.log(val); }
 });
