@@ -4,8 +4,8 @@ const { argv } = process;
 
 if (argv.length > 3) {
   let biggest = parseInt(argv[2], 10);
-  let secondBiggest = parseInt(argv[2], 10);
-  for (let i = 3; i < argv.length; i++) {
+  let secondBiggest = parseInt(argv[3], 10);
+  for (let i = 2; i < argv.length; i++) {
     const current = parseInt(argv[i], 10);
     if (current > biggest) {
       secondBiggest = biggest;
