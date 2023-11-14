@@ -6,15 +6,16 @@ class Rectangle {
       this.width = w;
       this.height = h;
     }
-    this.print = function () {
-      for (let i = 0; i < h; i++) {
-        let row = '';
-        for (let j = 0; j < w; j++) {
-          row += 'X';
-        }
-        console.log(row);
+  }
+
+  print () {
+    for (let i = 0; i < this.height; i++) {
+      let row = '';
+      for (let j = 0; j < this.width; j++) {
+        row += 'X';
       }
-    };
+      console.log(row);
+    }
   }
 }
 module.exports = Rectangle;
