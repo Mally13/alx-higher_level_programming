@@ -1,9 +1,11 @@
 #!/usr/bin/python3
 
+"""
+Lists all states from database hbtn_0e_0_usa
+"""
+
 import MySQLdb
 from sys import argv
-
-"""Lists all states from database hbtn_0e_0_usa"""
 if __name__ == "__main__":
     """Lists all states from database hbtn_0e_0_usa"""
     conn = MySQLdb.connect(host="localhost", port=3306, user=argv[1],
