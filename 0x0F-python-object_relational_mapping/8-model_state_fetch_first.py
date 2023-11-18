@@ -1,10 +1,10 @@
 #!/usr/bin/python3
 
 """
-Lists all State objects from the database hbtn_0e_6_usa
+Prints the first State object from the database hbtn_0e_6_usa
 """
-from model_state import Base, State
 from sys import argv
+from model_state import Base, State
 
 from sqlalchemy import (create_engine)
 from sqlalchemy.orm import sessionmaker
@@ -16,6 +16,5 @@ if __name__ == "__main__":
     )
     Session = sessionmaker(bind=engine)
     session = Session()
-    states = session.query(State).all()
-    for state in states:
-        print("{}: {}".format(state.id, state.name))
+    first_state = session.query(State).first()
+    print("{}: {}".format(first_state.id, first_state.name))
