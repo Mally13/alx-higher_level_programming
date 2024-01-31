@@ -13,11 +13,11 @@ if (argv.length < 3) {
 
 const id = argv[2];
 const link = 'https://swapi-api.alx-tools.com/api/films/';
-request.get(`${link}${id}`, (err, body, response) => {
+request.get(`${link}${id}`, (err, response, body) => {
   if (err) {
     console.error(err);
   }
-  const filmData = JSON.parse(response);
+  const filmData = JSON.parse(body);
   const title = filmData.title;
   console.log(title);
 });
